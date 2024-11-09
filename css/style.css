@@ -1,3 +1,26 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.home-page {
+    background: linear-gradient(135deg, #f6e58d, #f7b731);
+}
+
+.sobre-page {
+    background: linear-gradient(135deg, #9c4dcc, #6a1b9a);
+}
+
+.servicos-page {
+    background: linear-gradient(135deg, #ff9a8b, #ff6a00);
+}
+
+.contato-page {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -65,7 +88,7 @@
 .left-column h2 {
     font-family: 'Nunito';
     font-weight: 800;
-    color: #00c9da;
+    color: white;
     font-size: 3.2em;
     margin-bottom: 2rem;
 }
@@ -73,7 +96,7 @@
 .left-column p {
     font-family: 'Nunito';
     font-size: 1.6em;
-    color: #a1a1a1;
+    color: white;
     font-weight: 600;
 }
 
@@ -93,11 +116,44 @@
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 70px;
+    gap: 30px;
 }
 
 .card {
     width: 20rem;
-    margin: 0 30px;
+    border: solid 1px;
+    cursor: pointer;
+    transition: .8s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card.active {
+    transform: scale(1.02);
+}
+
+.move-right.active {
+    transform: translateX(20rem);
+}
+
+.move-left.active {
+    transform: translateX(-20rem);
+}
+
+.card-article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: none;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
 }
 
 /* Estilo do Contato */
