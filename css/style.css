@@ -1,0 +1,122 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+
+.navbar,
+.navbar a {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color: #333;
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #007bff;
+}
+
+.navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+.carousel-inner img {
+    height: 84vh;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carousel {
+    margin-top: 70px;
+}
+
+/* Estilo da página Sobre */
+
+#content-sobre {
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 70px;
+}
+
+.left-column {
+    margin-right: 20px;
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.left-column h2 {
+    font-family: 'Nunito';
+    font-weight: 800;
+    color: #00c9da;
+    font-size: 3.2em;
+    margin-bottom: 2rem;
+}
+
+.left-column p {
+    font-family: 'Nunito';
+    font-size: 1.6em;
+    color: #a1a1a1;
+    font-weight: 600;
+}
+
+.rigth-column img {
+    margin-left: 8.33333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Estilo do Serviços */
+
+.content-service {
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 70px;
+}
+
+.card {
+    width: 20rem;
+    margin: 0 30px;
+}
+
+/* Estilo do Contato */
+
+#content-contato {
+    height: 84vh;
+    margin-top: 70px;
+
+}
+
+/* Estilo do Footer */
+
+footer {
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
